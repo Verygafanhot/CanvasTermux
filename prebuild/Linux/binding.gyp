@@ -31,6 +31,7 @@
         '<!@(pkg-config libpng --libs)',
         '<!@(pkg-config pangocairo --libs)',
         '<!@(pkg-config freetype2 --libs)',
+        '-latomic'
         '<!@(pkg-config librsvg-2.0 --libs)',
         '-ljpeg',
         '-lgif'
