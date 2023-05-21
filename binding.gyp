@@ -135,7 +135,8 @@
             '<!@(pkg-config cairo --cflags-only-I | sed s/-I//g)',
             '<!@(pkg-config libpng --cflags-only-I | sed s/-I//g)',
             '<!@(pkg-config pangocairo --cflags-only-I | sed s/-I//g)',
-            '<!@(pkg-config freetype2 --cflags-only-I | sed s/-I//g)'
+            '<!@(pkg-config freetype2 --libs)',
+            '-latomic'
           ],
           'cflags': ['-Wno-cast-function-type'],
           'cflags!': ['-fno-exceptions'],
